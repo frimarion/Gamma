@@ -2,9 +2,9 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import { initBot } from './bot/index.js';
-import menuRouter from './routes/menu.js';
-import ordersRouter from './routes/orders.js';
-import usersRouter from './routes/users.js';
+import { router as menuRouter } from './routes/menu.js';
+import { router as ordersRouter } from './routes/orders.js';
+import { router as usersRouter } from './routes/users.js';
 import { verifyInitData } from './middleware/auth.js';
 
 const app = express();
