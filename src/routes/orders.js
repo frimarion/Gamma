@@ -148,4 +148,10 @@ router.post('/', async (req, res, next) => {
     }).catch(err => console.error('[Bot] Failed to send order to staff:', err));
 
     res.status(201).json({ id: order.id, status: order.status });
-  } catch (​​​​​​​​​​​​​​​​
+  } catch (err) {
+    next(err);
+  }
+});
+
+export default router;
+
