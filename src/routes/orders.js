@@ -153,5 +153,4 @@ router.post('/', async (req, res, next) => {
   }
 });
 
-export { router }
-
+export default router;
